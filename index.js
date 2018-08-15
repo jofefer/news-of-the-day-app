@@ -15,7 +15,9 @@ $(document).ready(function() {
         console.log(currentQuote);
 
         //put the title and author into the html
-        $(".quoteBody").html(currentQuote.title);
+        $(".quoteBody").hide();
+        $(".quoteBodyLink").html(currentQuote.title);
+        $(".quoteBodyLink").attr('href', currentQuote.url);
         $(".quoteAuthor").html(currentQuote.author);
 
         //click the twitt button and open a new tap with the new
