@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  var url = 'http://hn.algolia.com/api/v1/search?query=javascript';
+  var url = 'https://hn.algolia.com/api/v1/search?query=javascript';
   $.getJSON(url,function(data){
 
 
